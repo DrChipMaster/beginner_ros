@@ -25,9 +25,9 @@ target_link_libraries(talker ${catkin_LIBRARIES})
 add_executable(listener src/listener.cpp)
 target_link_libraries(listener ${catkin_LIBRARIES})
 # add_dependencies(listener beginner_tutorials_generate_messages_cpp)
-
-install(FILES
-  talker
-  listener
-  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
-)
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
+# install(FILES
+#  talker
+#  listener
+#  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+# )
