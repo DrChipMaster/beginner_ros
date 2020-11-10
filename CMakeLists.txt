@@ -13,8 +13,6 @@ generate_messages(DEPENDENCIES std_msgs)
 
 ## Declare a catkin package
 catkin_package(
-   INCLUDE_DIRS include
-   CATKIN_DEPENDS message_runtime
 )
 ## Build talker and listener
 include_directories(include ${catkin_INCLUDE_DIRS})
