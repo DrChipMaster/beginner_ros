@@ -29,5 +29,5 @@ add_dependencies(listener beginner_tutorials_generate_messages_cpp)
 install(FILES
   talker
   listener
-  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+  DESTINATION ${PROJECT_NAME}
 )
