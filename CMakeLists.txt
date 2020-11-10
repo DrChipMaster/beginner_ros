@@ -13,6 +13,7 @@ generate_messages(DEPENDENCIES std_msgs)
 
 ## Declare a catkin package
 catkin_package(
+   INCLUDE_DIRS include
    CATKIN_DEPENDS message_runtime
 )
 ## Build talker and listener
@@ -25,7 +26,7 @@ target_link_libraries(talker ${catkin_LIBRARIES})
 add_executable(listener src/listener.cpp)
 target_link_libraries(listener ${catkin_LIBRARIES})
 # add_dependencies(listener beginner_tutorials_generate_messages_cpp)
-set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
+
 # install(FILES
 #  talker
 #  listener
